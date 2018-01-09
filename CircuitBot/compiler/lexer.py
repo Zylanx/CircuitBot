@@ -24,7 +24,9 @@ class CircuitBotLexer(Lexer):
 			else:
 				self._line_start = False
 			yield token
-		
+	
+	# Function provided in the documentation for Sly
+	# Credit goes to David Beazley TODO: Actually give proper credit smh
 	def find_column(self, text = None, token = None):
 		if not text:
 			text = self.text
